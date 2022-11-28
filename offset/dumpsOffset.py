@@ -1,24 +1,25 @@
 # https://csgo.dumps.host/offsets
 
+
 client_state = 0x59f194
 client_state_generic_precache_table = 0x52a4
 client_state_signon_state = 0x108
-entity_list = 0x4dfbe54
-force_attack = 0x3229cbc
-force_attack2 = 0x3229cc8
-force_backward = 0x3229c68
-force_forward = 0x3229cec
-force_jump = 0x52b7bdc
-force_left = 0x3229c74
-force_right = 0x3229c80
-gamerules_proxy = 0x532b40c
+entity_list = 0x4dfce74
+force_attack = 0x322ac7c
+force_attack2 = 0x322ac88
+force_backward = 0x322acb8
+force_forward = 0x322acac
+force_jump = 0x52b8bfc
+force_left = 0x322acc4
+force_right = 0x322acd0
+gamerules_proxy = 0x532c42c
 global_vars = 0x59ee58
-glow_object_manager = 0x5356910
-input = 0x5259428
-local_player = 0xde6964
-player_resource = 0x3228000
-radar_base = 0x523292c
-view_matrix = 0x4decc84
+glow_object_manager = 0x5357948
+input = 0x525a448
+local_player = 0xde7964
+player_resource = 0x3229020
+radar_base = 0x523394c
+view_matrix = 0x4dedca4
 send_packets = 0xdcf92
 direct3d_device9 = 0xa62c0
 studio_hdr = 0x2950
