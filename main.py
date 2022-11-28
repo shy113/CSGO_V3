@@ -17,19 +17,26 @@ import config as Cfg
 import func.commonFunc as commonF
 import func.glowFunc as glowF
 import func.aimbotFunc as aimbotF
-def main():
-    commonF.help_msg()                  #帮助信息
+
+
+def mainLogic():
     try:
-        bswitchFlag = False
+        bswitchFlag = True
         while True:
-            if commonF.key_pressed(Cfg.switch_exit):bswitchFlag = not bswitchFlag
+            if commonF.key_pressed(Cfg.switch_exit): bswitchFlag = not bswitchFlag
             if bswitchFlag:
                 threading.Thread(aimbotF.aimbot_mian()).start()
                 threading.Thread(glowF.glow_main()).start()
     finally:
-        Cfg.handle.close_process()
+        mainLogic()
+
+
+def main():
+    commonF.help_msg()  # 帮助信息
+    mainLogic()
+    Cfg.handle.close_process()
+
 
 # 入口函数
 if __name__ == '__main__':
     main()
-
