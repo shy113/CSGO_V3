@@ -27,7 +27,6 @@ dormant = 0xed
 engine_build_number = 0x38eb054
 
 
-
 '''
 view_matrix # 矩阵 client.dll + view_matrix
 radar_base # 小地图 client.dll + radar_base
